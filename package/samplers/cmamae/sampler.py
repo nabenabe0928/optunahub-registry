@@ -196,11 +196,10 @@ class CmaMaeSampler(SimpleBaseSampler):  # type: ignore
             return
 
         # Tell the batch results to external sampler once the batch is ready.
-        values = np.asarray(self._values_to_tell)[np.argsort(self._stored_trial_numbers)]
+        values_to_tell = np.asarray(self._values_to_tell)[np.argsort(self._stored_trial_numbers)]
         # TODO: This assumes the objective is the first value while measures are
         # the remaining values; we should document this somewhere.
-        assert isinstance(values, np.ndarray)
-        self._scheduler.tell(objective=values[:, 0], measures=values[:, 1:])
+        self._scheduler.tell(objective=values_to_tell[:, 0], measures=values_to_tell[:, 1:])
 
         # Empty the results.
         self._values_to_tell = []
