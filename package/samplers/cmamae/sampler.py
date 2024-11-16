@@ -15,10 +15,7 @@ from ribs.emitters import EvolutionStrategyEmitter
 from ribs.schedulers import Scheduler
 
 
-SimpleBaseSampler = optunahub.load_module("samplers/simple").SimpleBaseSampler
-
-
-class CmaMaeSampler(SimpleBaseSampler):  # type: ignore
+class CmaMaeSampler(optunahub.samplers.SimpleBaseSampler):
     """A sampler using CMA-MAE as implemented in pyribs.
 
     `CMA-MAE <https://arxiv.org/abs/2205.10752>`_ is a quality diversity
