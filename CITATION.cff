@@ -2,7 +2,7 @@ cff-version: 1.2.0
 authors:
   - name: Preferred Networks, Inc.
 title: "OptunaHub: A Platform for Black-Box Optimization"
-url: "https://github.com/optuna/optunahub"
+url: "https://github.com/optuna/optunahub-registry"
 license: "MIT"
 preferred-citation:
   type: article
