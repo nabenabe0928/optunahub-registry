@@ -2,7 +2,7 @@ cff-version: 1.2.0
 authors:
   - name: Preferred Networks, Inc.
 title: "OptunaHub: A Platform for Black-Box Optimization"
-url: "https://github.com/optuna/optunahub-registry"
+url: "https://github.com/optuna/optunahub"
 license: "MIT"
 preferred-citation:
   type: article
@@ -13,9 +13,11 @@ preferred-citation:
       given-names: "Shuhei"
     - family-names: "Yanase"
       given-names: "Toshihiko"
-  doi: "10.48550/arXiv.2510.02798"
-  collection-title: "arXiv preprint arXiv:2510.02798"
+  journal: "Journal of Machine Learning Research"
+  volume: 27
+  issue: 203
   start: 1
-  end: 6
+  end: 10
+  url: "https://www.jmlr.org/papers/v27/25-2424.html"
   title: "OptunaHub: A Platform for Black-Box Optimization"
-  year: 2025
+  year: 2026
